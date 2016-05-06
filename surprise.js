@@ -10,12 +10,17 @@ $(document).ready( function() {
 		}).then(function(data) {
 		  console.log(data);
 		});*/
-		alert(("#ans").value);
-		if ($("#ans").value == "199981"){
+
+		if (isNaN($("#ans").val())) {
+			alert("Dude...that's not a number.");
+		}
+
+		if ($("#ans").val() == "199981"){
+			$("#error").text("");
 			alert("You are awesome!!! Click ok to get your surprise!");
-			window.href="https://wizzair.com/ro-RO/FlightSearch";
+			window.location="https://wizzair.com/ro-RO/FlightSearch";
 		} else {
-			$("#p").value = "Sorry, try again";
+			$("#error").text("Mai încearcă!");
 		}
 
 	})
