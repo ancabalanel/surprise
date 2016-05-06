@@ -10,7 +10,7 @@ $(document).ready( function() {
 		}).then(function(data) {
 		  console.log(data);
 		});*/
-		alert("#ans").value);
+		alert(("#ans").value);
 		if ($("#ans").value == "199981"){
 			alert("You are awesome!!! Click ok to get your surprise!");
 			window.href="https://wizzair.com/ro-RO/FlightSearch";
